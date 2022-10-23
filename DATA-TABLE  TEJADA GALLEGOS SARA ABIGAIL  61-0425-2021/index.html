@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        
+        <div  class="text-center">
+            <H2>MENU DE COMIDA </H2>
+        </div>
+
+        <table class="data">
+            <thead>
+             <tr>
+              <th>Platillo</th>
+              <th>Nombre del platillo</th>
+              <th>Pais</th>
+              <th>Precio</th>
+              <th>Receta</th>
+              <th width="20px">Ordenar</th>
+              
+              
+            </tr>
+          </thead>
+            <tbody>
+            <tr>
+                <td > <img src="imagen/pollo.jpg" class="img" alt=""></td>
+                <td>Pollo con verduras</td>
+                <td>El Salvador</td>
+                
+                <td>$3.00</td>
+                <th><button class="boton_receta"  onclick="verReceta(0)"><i class="fas fa-utensils"></i></button></th>
+                <th>
+                    <select name="" id="" >
+
+                        <option value="">Seleccione...</option>
+                        <option value="">A domicilio</option>
+                        <option value="">Recoger en restaurante</option>
+
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <td > <img src="imagen/pupusas.jpg" class="img" alt=""></td>
+                <td>Pupusas</td>
+                <td>El Salvador</td>
+                
+                <td>$0.75</td>
+                <th>  <button class="boton_receta" id="" onclick="verReceta(1)"><i class="fas fa-utensils"></i></button> </th>
+                <th>
+                    <select name="" id="">
+
+                        <option value="">Seleccione...</option>
+                        <option value="">A domicilio</option>
+                        <option value="">Recoger en restaurante</option>
+
+                    </select>
+
+                </th>
+            </tr>
+
+            <tr>
+                <td > <img src="imagen/lasaña.jpg" class="img" alt=""></td>
+                <td>Lasaña</td>
+                <td>El Salvador</td>
+                
+                <td>$5.25</td>
+                <th>  <button class="boton_receta" id="" onclick="verReceta(2)"><i class="fas fa-utensils"></i></button> </th>
+                <th>
+                    <select name="" id="">
+
+                        <option value="">Seleccione...</option>
+                        <option value="">A domicilio</option>
+                        <option value="">Recoger en restaurante</option>
+
+                    </select>
+                </th>
+            </tr>
+            </tbody>
+        </table>
+
+
+
+        <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content" style="text-align: center;">
+          <span class="close">&times;</span>
+          <div id="diverror">
+          
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <script src="js/functions.js"></script>
+
+</body>
+</html>
